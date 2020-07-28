@@ -86,7 +86,7 @@ void hls_sobel(AXI_STREAM& INPUT_STREAM, AXI_STREAM& OUTPUT_STREAM, int rows, in
 **恢复block design：**
 在vivado Tcl Console中`source system.tcl`，随后手动添加提供的`system_wrapper.v`，以及约束文件。
 
-**注意：为了保证烧写位流时不会发生问题，所有管脚必须被正确分配，否则可能会自动分配到其他位置使jtag无法正常烧写。参考[No devices detected on target](https://forums.xilinx.com/t5/FPGA-Configuration/Labtools-27-3165-error-but-FPGA-is-programmed/td-p/917729)**
+**注意：为了保证烧写位流正确，所有管脚必须被正确分配，否则可能会自动分配到其他位置使jtag无法正常烧写。参考[No devices detected on target](https://forums.xilinx.com/t5/FPGA-Configuration/Labtools-27-3165-error-but-FPGA-is-programmed/td-p/917729)**
 
 ## SDK程序分析
 

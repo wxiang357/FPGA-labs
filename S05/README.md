@@ -69,6 +69,9 @@ void hls_sobel(AXI_STREAM& INPUT_STREAM, AXI_STREAM& OUTPUT_STREAM, int rows, in
 
 ## 硬件电路搭建
 
+vivado版本：2018.3
+开发板：zedboard
+
 硬件电路采用基本的视频图像处理架构：视频或图像通过处理器的HP接口将数据写入DDR；HLS模块通过VDMA读取内存数据，处理后写回内存；Display Controller完成显示功能。
 
 ![20200728055147](https://raw.githubusercontent.com/wxiang357/Image/master/20200728055147.png)

@@ -78,7 +78,7 @@ vivado版本：2018.3
 
 硬件框图如下，其中vdma_1开启读写通道，负责从内存读取数据给HLS模块处理，并将处理后的结果写回内存；vdma_0只开启读通道，负责将内存数据发送给显示模块。Video Timing Controller产生视频显示需要的时序，AXI4-Stream to Video Out将数据流转换为显示需要的格式，可以直接用于VGA的驱动。
 
-**如果要驱动HDMI需要使用Diligent或Zedboard网站提供的IP，** [S05/CH03/repo](./repo)文件夹提供了这两个IP。Zybo开发板采用IO驱动HDMI，因此用`rgb to dvi`IP核，该IP核输出TMDS信号，TMDS原理参考[基于FPGA的高清显示接口驱动](https://www.cnblogs.com/ninghechuan/archive/2018/01/26/8353827.html)；Zedboard采用ADV7511芯片驱动HDMI，需要使用`zed_hdmi_out`IP核。
+**如果要驱动HDMI需要使用Digilent或Zedboard网站提供的IP，** [S05/CH03/repo](./repo)文件夹提供了这两个IP。Zybo开发板采用IO驱动HDMI，因此用`rgb to dvi`IP核，该IP核输出TMDS信号，TMDS原理参考[基于FPGA的高清显示接口驱动](https://www.cnblogs.com/ninghechuan/archive/2018/01/26/8353827.html)；Zedboard采用ADV7511芯片驱动HDMI，需要使用`zed_hdmi_out`IP核。
 
 ![20200728055653](https://raw.githubusercontent.com/wxiang357/Image/master/20200728055653.png)
 
